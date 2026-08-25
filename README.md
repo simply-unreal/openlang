@@ -10,6 +10,28 @@
 - [Phase 5 - Tooling](#phase-5---tooling)
 - [Phase 6 - First Stable Release](#phase-6---first-stable-release)
 - [Long-Term Ideas](#long-term-ideas)
+- [Goal](#goal)
+
+### Core Philosophy
+- [Core Philosophy](#core-philosophy)
+
+## Core Philosophy
+
+- Indentation defines blocks
+
+- No `{}` required
+
+- No semicolons
+
+- Types are explicit when useful
+
+- Openlang should hide syntactic complexity not what the program is doing
+
+- Low level features should look simple
+
+- Avoid symbols like `->` `*` `&`
+
+- Avoid unnecessary keywords and punctuation
 
 ## Roadmap
 
@@ -123,3 +145,7 @@
 
 ### Goal
 > Python like readability with C like control over the machine.
+
+## Syntax
+
+### 
