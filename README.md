@@ -15,6 +15,9 @@
 ### Core Philosophy
 - [Core Philosophy](#core-philosophy)
 
+### Syntax
+- [Variables](#variables)
+
 ## Core Philosophy
 
 - Indentation defines blocks
@@ -148,4 +151,35 @@
 
 ## Syntax
 
-### 
+### Variables
+Basic variable: `name: type = value;`
+
+Examples:
+```
+age: i32 = 20
+active: bool = true
+letter: char = 'A'
+```
+
+Openlang allows for type inference:
+```
+age = 20
+letter: char = 'A'
+```
+
+By default variables are statically typed which means after they are assigned a type it cannot be changed. However if you
+do want dynamically typed variables (which means the type can change after its assigned) you can use the dynamic keyword.
+Examples:
+```
+dynamic age: i32 = 20
+dynamic active = true
+```
+> NOTE: Dynamic typed variables will take up more memory than static typed variables as they have to store there type
+alongside the value they hold
+
+But what if you want a variable to not change? Well you can use the const keyword for that.
+Examples:
+```
+const age = 20;
+const dynamic num: i32 = 31;
+```
