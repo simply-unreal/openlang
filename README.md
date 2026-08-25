@@ -167,7 +167,7 @@ age = 20
 letter = 'A'
 ```
 
-By default variables are statically typed which means after they are assigned a type it cannot be changed. However if you
+By default variables are statically typed (which means after they are assigned a type it cannot be changed). However if you
 do want dynamically typed variables (which means the type can change after its assigned) you can use the dynamic keyword.
 Examples:
 ```
