@@ -17,6 +17,7 @@
 
 ### Syntax
 - [Variables](#variables)
+- [Functions](#functions)
 
 ## Core Philosophy
 
@@ -152,7 +153,8 @@
 ## Syntax
 
 ### Variables
-Basic variable: `name: type = value;`
+
+Basic variable syntax: `name: type = value;`
 
 Examples:
 ```
@@ -165,6 +167,7 @@ Openlang allows for type inference:
 ```
 age = 20
 letter = 'A'
+compiler = "Openlang"
 ```
 
 By default variables are statically typed (which means after they are assigned a type it cannot be changed). However if you
@@ -182,4 +185,66 @@ Examples:
 ```
 const age = 20;
 const dynamic num: i32 = 31;
+```
+
+### Functions
+
+Basic function syntax: `fn name(parameters) return_type:`
+
+Examples:
+```
+fn add(a: i32, b: i32) i64:
+    return a + b
+
+fn get_name() str:
+    return "Alex"
+
+fn is_alive(health: i32) bool:
+    return health > 0
+```
+
+If you want a function that doesnt return anything:
+```
+fn print_name(name: str) void:
+    print(name)
+```
+
+Functions also have return type inference:
+```
+fn do_something():
+    print("Hello World!")
+    // this function returns void
+```
+
+For functions that should have a default parameter value you can do this:
+```
+fn find_user(username: str = "admin"):
+    // do user stuff
+```
+
+Functions also allow overloading
+```
+fn print_something(val: i32):
+    print(val)
+
+fn print_something(val: str):
+    print(val)
+```
+
+If the your function might return a value you can use ? which indicates it might return a value or not:
+```
+fn add(value1: i32, value2: i32) i64?:
+    // doesnt return a i64
+```
+
+An extremely cool feature in Openlang is multiple return values:
+```
+fn return_multiple_vals() i64, str:
+    return 32, "Hello World!"
+    // this returns 32 and "Hello World!"
+```
+
+To handle multiple return values you can do something like this:
+```
+i64_val: i64, str_val: str = return_multiple_vals() // i64_val = 32 and str_val = "Hello World!"
 ```
