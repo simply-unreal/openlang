@@ -18,6 +18,7 @@
 ### Syntax
 - [Variables](#variables)
 - [Functions](#functions)
+- [Conditions](#conditions)
 
 ## Core Philosophy
 
@@ -247,4 +248,86 @@ fn return_multiple_vals() i64, str:
 To handle multiple return values you can do something like this:
 ```
 i64_val: i64, str_val: str = return_multiple_vals() // i64_val = 32 and str_val = "Hello World!"
+```
+
+### Conditions
+
+There are many different types of condition statements in Openlang such as:
+
+- if / elif / else
+
+- when
+
+- match
+
+- unless
+
+- try / catch
+
+The universal standard are if statements which you probably already seen from other programming languages:
+
+```
+if health > 0:
+    print("Alive")
+else:
+    print("Dead")
+```
+
+A cool feature of if statements in Openlang is range conditions. Instead of:
+```
+if health >= 1 and health <= 25:
+    warn()
+```
+You could do this:
+```
+if health in 1..25:
+    warn()
+```
+Much cleaner right?
+
+The next type of conditions in Openlang are when conditions:
+```
+when status:
+    0:
+        print("Loading")
+    1:
+        print("Ready")
+    2:
+        print ("Error")
+    else:
+        print("Unknown status")
+```
+This could replace a lot of ugly if elif chains.
+
+If you want to use something more powerfull we have match statements:
+```
+match command:
+    "start":
+        start()
+    "stop":
+        stop()
+    "restart":
+        restart()
+    _:
+        print("Unknown command")
+```
+
+A more niche condition statement is the unless condition:
+```
+unless connected:
+    connect()
+```
+You can use this instead of:
+```
+if not connected:
+    connect()
+```
+Its basically just syntactic sugar but it can make code very readable.
+
+The final condition statement is try / catch. You probably already know this from languages like C++ or Python:
+```
+try:
+    file.read()
+catch error:
+    print(error)
 ```
