@@ -164,7 +164,7 @@ letter: char = 'A'
 Openlang allows for type inference:
 ```
 age = 20
-letter: char = 'A'
+letter = 'A'
 ```
 
 By default variables are statically typed which means after they are assigned a type it cannot be changed. However if you
