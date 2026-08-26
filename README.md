@@ -46,7 +46,7 @@ OpenLang is designed to use a straightforward and readable syntax.
 Functions are declared using the `fn` keyword:
 
 ```openlang
-fn add(a, b) {
+fn add(i32: a, i32: b) {
     return a + b;
 }
 ```
@@ -92,7 +92,7 @@ let i = 0;
 
 while i < 10 {
     println(i);
-    i = i + 1;
+    i += 1;
 }
 ```
 
@@ -181,16 +181,16 @@ OpenLang is currently **in progress**.
 
 Planned development includes:
 
-* [ ] Core language implementation
-* [ ] Type system
-* [ ] Memory management facilities
-* [ ] Functions and control flow
-* [ ] Structs and user-defined types
-* [ ] Standard library
-* [ ] Compiler
-* [ ] Documentation
-* [ ] Error handling
-* [ ] Development tooling
+* Core language implementation
+* Type system
+* Memory management facilities
+* Functions and control flow
+* Structs and user-defined types
+* Standard library
+* Compiler
+* Documentation
+* Error handling
+* Development tooling
 
 The roadmap may change as the language develops.
 
