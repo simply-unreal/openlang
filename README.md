@@ -69,6 +69,14 @@ let version = 1;
 let enabled = true;
 ```
 
+If you want explicit typing:
+
+```openlang
+let name: string = "OpenLang"; // requires std.string
+let version: i32 = 1;
+let enabled: bool = true;
+```
+
 Variable declarations are intentionally concise while remaining readable.
 
 ### Conditions
