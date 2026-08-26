@@ -94,6 +94,10 @@ while i < 10 {
     println(i);
     i += 1;
 }
+
+for i in range 0..10 {
+    println(i);
+}
 ```
 
 ### Structs
