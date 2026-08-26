@@ -64,7 +64,7 @@ println(result);
 Variables are declared using `let`:
 
 ```openlang
-let name = "OpenLang";
+let name = "OpenLang"; // requires std.string
 let version = 1;
 let enabled = true;
 ```
