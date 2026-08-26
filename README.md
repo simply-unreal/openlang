@@ -19,6 +19,7 @@
 - [Variables](#variables)
 - [Functions](#functions)
 - [Conditions](#conditions)
+- [Loops](#loops)
 
 ## Core Philosophy
 
@@ -155,28 +156,28 @@
 
 ### Variables
 
-Basic variable syntax: `name: type = value;`
+Basic variable syntax: `let name: type = value;`
 
 Examples:
 ```
-age: i32 = 20
-active: bool = true
-letter: char = 'A'
+let age: i32 = 20
+let active: bool = true
+let letter: char = 'A'
 ```
 
 Openlang allows for type inference:
 ```
-age = 20
-letter = 'A'
-compiler = "Openlang"
+let age = 20
+let letter = 'A'
+let compiler = "Openlang"
 ```
 
 By default variables are statically typed (which means after they are assigned a type it cannot be changed). However if you
 do want dynamically typed variables (which means the type can change after its assigned) you can use the dynamic keyword.
 Examples:
 ```
-dynamic age: i32 = 20
-dynamic active = true
+let dynamic age: i32 = 20
+let dynamic active = true
 ```
 > NOTE: Dynamic typed variables will take up more memory than static typed variables as they have to store there type
 alongside the value they hold
@@ -184,9 +185,10 @@ alongside the value they hold
 But what if you want a variable to not change? Well you can use the const keyword for that.
 Examples:
 ```
-const age = 20;
-const dynamic num: i32 = 31;
+let const age = 20;
+let const num: i32 = 31;
 ```
+> NOTE: Const variables cannot be dynamic
 
 ### Functions
 
@@ -247,7 +249,7 @@ fn return_multiple_vals() i64, str:
 
 To handle multiple return values you can do something like this:
 ```
-i64_val: i64, str_val: str = return_multiple_vals() // i64_val = 32 and str_val = "Hello World!"
+let i64_val: i64, str_val: str = return_multiple_vals() // i64_val = 32 and str_val = "Hello World!"
 ```
 
 ### Conditions
@@ -330,4 +332,67 @@ try:
     file.read()
 catch error:
     print(error)
+```
+
+### Loops
+
+Openlang has plenty of loops for whatever you need:
+
+- While loop
+
+- For loop
+
+- Loop (infinite loop)
+
+- Until loop
+
+- Repeat loop
+
+The while loop is pretty much the same as other languages:
+```
+while health > 0:
+    attack()
+```
+
+The for loop is also pretty much the same with a few adjustments:
+
+Iterate for loop
+```
+for item in items:
+    print(item)
+```
+
+Range for loop
+```
+for i in 0..10:
+    print(i)
+    // 0 through 9
+
+for i in 0..=10:
+    print(i)
+    // 0 through 10
+```
+
+The Loop (infinite loop) is just a loop that keeps on going:
+```
+loop:
+    print("Hello World!")
+    break // use break to break out of a infinite loop
+```
+
+Until loop is the inverse of while loop:
+```
+until connected:
+    try_connect()
+```
+Is the same as:
+```
+while not connected:
+    try_connect()
+```
+
+The repeat loop just loops a specified amount of times:
+```
+repeat 10:
+    attack()
 ```
