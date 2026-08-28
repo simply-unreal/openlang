@@ -85,12 +85,12 @@ clean: CMakeFiles/Openlang.dir/clean
 CMakeFiles/Openlang.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Openlang.dir/build.make CMakeFiles/Openlang.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Openlang.dir/build.make CMakeFiles/Openlang.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hunterscott/Development/Projects/C++/Openlang/build/CMakeFiles --progress-num=1,2 "Built target Openlang"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hunterscott/Development/Projects/C++/Openlang/build/CMakeFiles --progress-num=1,2,3 "Built target Openlang"
 .PHONY : CMakeFiles/Openlang.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Openlang.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hunterscott/Development/Projects/C++/Openlang/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hunterscott/Development/Projects/C++/Openlang/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Openlang.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hunterscott/Development/Projects/C++/Openlang/build/CMakeFiles 0
 .PHONY : CMakeFiles/Openlang.dir/rule
@@ -102,7 +102,7 @@ Openlang: CMakeFiles/Openlang.dir/rule
 # codegen rule for target.
 CMakeFiles/Openlang.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Openlang.dir/build.make CMakeFiles/Openlang.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hunterscott/Development/Projects/C++/Openlang/build/CMakeFiles --progress-num=1,2 "Finished codegen for target Openlang"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hunterscott/Development/Projects/C++/Openlang/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target Openlang"
 .PHONY : CMakeFiles/Openlang.dir/codegen
 
 # clean rule for target.

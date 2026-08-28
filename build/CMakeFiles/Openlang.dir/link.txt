@@ -1,1 +1,1 @@
-/usr/bin/clang++ -Xlinker --dependency-file=CMakeFiles/Openlang.dir/link.d CMakeFiles/Openlang.dir/src/main.cpp.o -o Openlang
+/usr/bin/clang++ -Xlinker --dependency-file=CMakeFiles/Openlang.dir/link.d CMakeFiles/Openlang.dir/src/main.cpp.o CMakeFiles/Openlang.dir/src/lexer/lexer.cpp.o -o Openlang

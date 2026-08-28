@@ -3,6 +3,7 @@ Openlang: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../lib64/crti.o \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o \
   CMakeFiles/Openlang.dir/src/main.cpp.o \
+  CMakeFiles/Openlang.dir/src/lexer/lexer.cpp.o \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/libstdc++.so \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../lib64/libm.so \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../lib64/libm.so \
@@ -38,6 +39,8 @@ Openlang: \
 /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o:
 
 CMakeFiles/Openlang.dir/src/main.cpp.o:
+
+CMakeFiles/Openlang.dir/src/lexer/lexer.cpp.o:
 
 /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/libstdc++.so:
 

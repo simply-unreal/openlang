@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Openlang.dir/link.d"
+  "CMakeFiles/Openlang.dir/src/lexer/lexer.cpp.o"
+  "CMakeFiles/Openlang.dir/src/lexer/lexer.cpp.o.d"
   "CMakeFiles/Openlang.dir/src/main.cpp.o"
   "CMakeFiles/Openlang.dir/src/main.cpp.o.d"
   "Openlang"

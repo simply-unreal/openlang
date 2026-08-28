@@ -126,7 +126,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=MyProject
+CMAKE_PROJECT_NAME:STATIC=Openlang
 
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
@@ -204,6 +204,15 @@ MyProject_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 MyProject_SOURCE_DIR:STATIC=/home/hunterscott/Development/Projects/C++/Openlang
+
+//Value Computed by CMake
+Openlang_BINARY_DIR:STATIC=/home/hunterscott/Development/Projects/C++/Openlang/build
+
+//Value Computed by CMake
+Openlang_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Openlang_SOURCE_DIR:STATIC=/home/hunterscott/Development/Projects/C++/Openlang
 
 
 ########################

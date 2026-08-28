@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/hunterscott/Development/Projects/C++/Openlang/include
 
-CXX_FLAGS = -std=c++23
+CXX_FLAGS = -std=c++23 -Werror
 
